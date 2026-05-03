@@ -100,13 +100,14 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-}
-
-.profile-container {
     width: 100%;
     max-width: 400px;
     position: sticky; 
     top: 60px;
+}
+
+.profile-container {
+
 }
 
 .profile-frame {

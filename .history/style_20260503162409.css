@@ -110,7 +110,6 @@ h2 {
 }
 
 .profile-frame {
-    width: 100%;
     aspect-ratio: 4 / 5; 
     background-color: #334155;
     border: 2px dashed #475569;
@@ -119,14 +118,15 @@ h2 {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
 
 .profile-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
 }
 
 .image-hint {

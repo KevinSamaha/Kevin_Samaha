@@ -94,26 +94,19 @@ h2 {
 }
 
 /* Right Column: The Image Area */
-
 .image-column {
     flex: 0.8; 
     display: flex;
     justify-content: center;
     align-items: flex-start;
-}
-
-.profile-container {
     width: 100%;
     max-width: 400px;
     position: sticky; 
     top: 60px;
-}
-
-.profile-frame {
     width: 100%;
     aspect-ratio: 4 / 5; 
-    background-color: #334155;
-    border: 2px dashed #475569;
+    background-color: #ffffff;
+    border: 2px dashed #3d3d3d;
     border-radius: 20px;
     display: flex;
     align-items: center;

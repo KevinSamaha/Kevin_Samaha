@@ -1,14 +1,10 @@
 /* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #b6bdcd; /* Dark Navy */
-    color: #636363;
+    background-color: #00000065; /* Dark Navy */
+    color: #ffffff;
     display: flex; 
     min-height: 100vh;
     overflow-x: hidden;
@@ -26,6 +22,8 @@ header {
     top: 0;
     display: flex;
     flex-direction: column;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .logo {
@@ -35,23 +33,14 @@ header {
     margin-bottom: 40px;
 }
 
+
 nav ul {
     list-style: none;
+    font-size: larger;
 }
 
 nav ul li {
     margin-bottom: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #3b3b3b;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #848484;
 }
 
 /* 2. Main Content Container */
@@ -96,9 +85,8 @@ h2 {
 /* Right Column: The Image Area */
 
 .image-column {
-    flex: 0.8; 
+    flex: 0.8;
     display: flex;
-    justify-content: center;
     align-items: flex-start;
 }
 
@@ -121,8 +109,6 @@ h2 {
     overflow: hidden;
 }
 
-
-
 .profile-frame img {
     width: 100%;
     height: 100%;
@@ -133,7 +119,11 @@ h2 {
     color: #64748b;
     text-align: center;
     font-size: 0.9rem;
-    margin-top: 15px;
+    margin-top: 15px
+}
+
+.svg{
+    width: 2rem;
 }
 
 /* Responsive design for tablets and phones */

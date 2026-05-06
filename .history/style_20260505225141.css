@@ -34,9 +34,12 @@ header {
 }
 
 
-.sidebarcontainer{
+nav ul {
     list-style: none;
     font-size: larger;
+}
+
+nav ul li {
     margin-bottom: 20px;
 }
 

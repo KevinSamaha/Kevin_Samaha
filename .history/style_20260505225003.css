@@ -34,22 +34,22 @@ header {
 }
 
 
-.sidebarcontainer{
+nav ul {
     list-style: none;
     font-size: larger;
+}
+
+nav ul li {
     margin-bottom: 20px;
 }
 
-.sidebar {
+nav ul li p {
     display: flex;
     align-items: center;
     gap: 10px; /* space between icon and text */
 }
 
-.icon {
-    width: 20px;
-    height: 20px;
-}
+
 
 /* 2. Main Content Container */
 main {

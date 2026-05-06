@@ -40,6 +40,10 @@ header {
     margin-bottom: 20px;
 }
 
+nav ul li {
+    
+}
+
 .sidebar {
     display: flex;
     align-items: center;

@@ -4,7 +4,7 @@
   background-color: rgb(188, 192, 192);
 }
 .title {
-  margin-bottom: 0px;
+  margin-bottom: 0px; /* ! remove */
   margin-top: 0px;
   margin-left: 20px;
 }

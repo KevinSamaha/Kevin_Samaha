@@ -11,31 +11,31 @@ body {
 
 /* 1. Sidebar Navigation */
 header {
-  width: 280px; /*should be in % */
+  width: 15%;
   height: 100vh;
   background-color: #c5c5c5;
   border-right: 1px solid #334155;
-  padding: 50px 30px; /*should be rem*/
+  padding: 50px 30px;
   position: fixed;
   left: 0;
   top: 0;
   display: flex;
   flex-direction: column;
-  padding-right: 10px; /*should be rem*/
-  padding-left: 10px; /*should be rem*/
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
   color: #616161;
-  margin-bottom: 40px; /*should be rem*/
+  margin-bottom: 4rem;
 }
 
 .sidebarcontainer {
   list-style: none;
   font-size: larger;
-  margin-bottom: 20px; /*should be rem*/
+  margin-bottom: 1rem;
 }
 
 .sidebar {
@@ -51,11 +51,11 @@ header {
 
 /* 2. Main Content Container */
 main {
-  margin-left: 280px; /* Space for the sidebar */ /*should be rem*/
+  margin-left: 17.5rem;
   width: 100%;
   display: flex;
-  padding: 60px; /*should be rem*/
-  gap: 50px; /*should be rem*/
+  padding: 3.75rem;
+  gap: 3.125rem;
 }
 
 /* Left Column: The Questions */
@@ -68,19 +68,19 @@ main {
 
 .content-box {
   background-color: #686868;
-  padding: 40px; /*should be rem*/
+  padding: 2.5rem;
   border-radius: 16px;
   border: 1px solid #2b2b2b;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 /*replace h2 with it's own class*/
-h2 {
+.question {
   font-size: 1.25rem;
-  margin-bottom: 15px; /*should be rem*/
+  margin-bottom: 0.9375rem;
   color: #000000;
   border-left: 4px solid #8f8f8f;
-  padding-left: 15px; /*should be rem*/
+  padding-left: 0.9375rem;
 }
 
 .placeholder {
@@ -99,13 +99,13 @@ h2 {
 
 .profile-container {
   width: 100%;
-  max-width: 400px; /*should be %*/
+  max-width: 100%;
   position: sticky;
   top: 60px;
 }
 
 .profile-frame {
-  width: 100%;
+  width: 70%;
   aspect-ratio: 4 / 5;
   background-color: #334155;
   border: 2px dashed #475569;
@@ -118,20 +118,7 @@ h2 {
 
 .profile-frame img {
   width: 100%;
-  height: 100%; /*remove*/
   object-fit: cover;
-}
-
-.image-hint {
-  color: #64748b;
-  text-align: center;
-  font-size: 0.9rem;
-  margin-top: 15px; /*should be rem*/
-}
-
-/*remove .svg*/
-.svg {
-  width: 2rem;
 }
 
 /* Responsive design for tablets and phones */
@@ -149,7 +136,7 @@ h2 {
   main {
     margin-left: 0;
     flex-direction: column;
-    padding: 30px; /*should be rem*/
+    padding: 1.875rem;
   }
   .profile-container {
     position: relative;

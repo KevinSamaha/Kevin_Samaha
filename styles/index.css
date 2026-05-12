@@ -19,7 +19,6 @@ body {
 /* =========================
    SIDEBAR
 ========================= */
-
 header {
   width: 12%;
   min-width: 1%;
@@ -53,6 +52,15 @@ header {
   align-items: center;
   gap: 0.75rem;
   font-size: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.sidebar:hover {
+  color: #000000;
+  background-color: #8f8f8f;
+  border-radius: 0.5rem;
+  transition: 0.2s ease;
 }
 
 .icon {

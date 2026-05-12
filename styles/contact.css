@@ -1,3 +1,4 @@
+/* GENERAL */
 * {
   margin: 0;
   padding: 0;
@@ -10,37 +11,95 @@ body {
   color: white;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-/* WRAPPER */
+/* =========================
+   SIDEBAR (shared layout)
+========================= */
+
+header {
+  width: 12%;
+  min-width: 12rem;
+  height: 100vh;
+  background-color: #c5c5c5;
+  border-right: 0.0625rem solid #334155;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0.5rem;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #616161;
+  text-align: center;
+}
+
+.sidebarcontainer {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  text-decoration: none;
+  color: #ffffff;
+
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+
+  transition: 0.2s ease;
+}
+
+.sidebar:hover {
+  background-color: #8f8f8f;
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+main {
+  margin-left: 17rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+/* =========================
+   CONTACT BOX
+========================= */
+
 .contact-wrapper {
   width: 100%;
   max-width: 50rem;
-  padding: 2rem;
-  text-align: center;
+
   background-color: #686868;
   padding: 2rem;
   border-radius: 1rem;
   border: 0.0625rem solid #2b2b2b;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+
+  text-align: center;
 }
 
-h1 {
+.title {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #616161;
-}
-
-/* CARD */
-.title {
   color: #ffffff;
-}
-
-.contact-card h2 {
-  margin-bottom: 1rem;
-  color: #000;
 }
 
 .subtitle {
@@ -50,6 +109,7 @@ h1 {
 }
 
 /* CONTACT INFO */
+
 .contact-info {
   display: flex;
   gap: 1.5rem;
@@ -67,8 +127,8 @@ h1 {
 }
 
 .info-box h3 {
-  margin-bottom: 0.5rem;
   color: #000;
+  margin-bottom: 0.5rem;
 }
 
 .info-box p {
@@ -76,6 +136,7 @@ h1 {
 }
 
 /* AVAILABILITY */
+
 .availability {
   background-color: #c5c5c5;
   padding: 1.5rem;
@@ -85,9 +146,9 @@ h1 {
 }
 
 .availability h3 {
+  text-align: center;
   margin-bottom: 1rem;
   color: #000;
-  text-align: center;
 }
 
 .availability ul {
@@ -97,13 +158,24 @@ h1 {
 }
 
 /* MOBILE */
-@media (max-width: 48rem) {
+
+@media (max-width: 64rem) {
+  header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  main {
+    margin-left: 0;
+    margin-top: 10rem;
+    padding: 1.5rem;
+  }
+
   .contact-info {
     flex-direction: column;
     align-items: center;
-  }
-
-  h1 {
-    font-size: 2rem;
   }
 }

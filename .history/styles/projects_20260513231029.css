@@ -14,6 +14,58 @@ body {
 }
 
 /* =========================
+   SIDEBAR (shared)
+========================= */
+
+header {
+  width: 12%;
+  min-width: 12rem;
+  height: 100vh;
+  background-color: #c5c5c5;
+  border-right: 0.0625rem solid #334155;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0.5rem;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #616161;
+  text-align: center;
+}
+
+.sidebarcontainer {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  text-decoration: none;
+  color: #ffffff;
+
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+
+  transition: 0.2s ease;
+}
+
+.sidebar:hover {
+  background-color: #8f8f8f;
+}
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+/* =========================
    MAIN AREA
 ========================= */
 

@@ -75,17 +75,23 @@ main {
   border: 0.0625rem solid #334155;
 }
 
-.info-title {
-  color: #000;
-  margin-bottom: 0.5rem;
-}
-
-.info {
+.info-box p {
   color: #2b2b2b;
   /* These lines handle the scaling/wrapping */
   word-wrap: break-word;       /* Older browsers */
   overflow-wrap: anywhere;     /* Modern way to break long strings */
   font-size: clamp(0.8rem, 2vw, 1rem); /* Dynamically scales font based on screen size */
+}
+
+
+
+.info-box h3 {
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.info-box p {
+  color: #2b2b2b;
 }
 
 /* AVAILABILITY */
@@ -98,13 +104,13 @@ main {
   text-align: left;
 }
 
-.availability-title {
+.availability h3 {
   text-align: center;
   margin-bottom: 1rem;
   color: #000;
 }
 
-.availability-info {
+.availability ul {
   list-style: none;
   color: #2b2b2b;
   line-height: 1.8;

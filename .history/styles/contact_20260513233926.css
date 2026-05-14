@@ -98,13 +98,13 @@ main {
   text-align: left;
 }
 
-.availability-title {
+.availability h3 {
   text-align: center;
   margin-bottom: 1rem;
   color: #000;
 }
 
-.availability-info {
+.availability ul {
   list-style: none;
   color: #2b2b2b;
   line-height: 1.8;
